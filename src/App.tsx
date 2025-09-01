@@ -41,10 +41,10 @@ END:VCARD`;
 
 	return (
 		<div className="dark min-h-screen bg-background p-4">
-			<div className="max-w-md mx-auto space-y-2">
+			<div className="max-w-lg mx-auto space-y-3">
 				{/* Header Card */}
 				<Card className="text-center">
-					<CardHeader className="pb-2">
+					<CardHeader className="pt-5 pb-4">
 						<CardTitle className="text-2xl">G. M. Saklayen Selim</CardTitle>
 						<div className="space-y-0.5 text-muted-foreground text-sm">
 							<p>Acting Sales Manager</p>
@@ -58,7 +58,7 @@ END:VCARD`;
 
 				{/* Roles Card */}
 				<Card className="gap-2">
-					<CardHeader >
+					<CardHeader className="pt-5">
 						<CardTitle className="text-base">Professional Roles</CardTitle>
 					</CardHeader>
 					<CardContent className="space-y-1 pb-3">
@@ -74,7 +74,7 @@ END:VCARD`;
 
 				{/* Supported Brands Card */}
 				<Card className="gap-2">
-					<CardHeader>
+					<CardHeader className="pt-5">
 						<CardTitle className="text-base">Supporting Regional & Global Travel Brands</CardTitle>
 					</CardHeader>
 					<CardContent className="pb-3">
@@ -145,7 +145,7 @@ END:VCARD`;
 
 				{/* Footer */}
 				<div className="sticky bottom-0 text-center text-xs text-muted-foreground py-1">
-					<Button onClick={generateVCard} className="w-full h-8 text-sm" variant="default">
+					<Button onClick={generateVCard} className="w-full h-10 text-sm" variant="default">
 						<Download className="w-3 h-3 mr-2" />
 						Save to Contacts
 					</Button>
