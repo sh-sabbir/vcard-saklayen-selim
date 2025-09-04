@@ -6,12 +6,10 @@ import { Mail, Phone, MessageCircle, Download } from "lucide-react";
 
 export default function App() {
 	const supportedBrands = [
-		"S.S International Travels & Tours (BD)",
-		"S.S Holidays (BD)",
-		"Travel Door Ltd (BD)",
-		"Takeoff Travels (BD)",
-		"Mynztrip (Malaysia)",
-		"K Tours & Events (Thailand)",
+		"#Bangladesh",
+		"#Malaysia",
+		"#Thailand",
+		"#UAE",
 	];
 
 	const generateVCard = () => {
@@ -24,7 +22,7 @@ ORG:Batik Air Malaysia (GSA – Bangladesh)
 TEL;TYPE=CELL:+8801717460348
 EMAIL;TYPE=WORK:gmsaki009@gmail.com
 EMAIL;TYPE=WORK:gmsaklayen@hotmail.com
-NOTE:Business Operations Advisor (Part-Time)\\nIATA & Non-IATA OTA Specialist\\n\\nSupporting Regional & Global Travel Brands:\\n• S.S International Travels & Tours (BD)\\n• S.S Holidays (BD)\\n• Travel Door Ltd (BD)\\n• Takeoff Travels (BD)\\n• Mynztrip (Malaysia)\\n• K Tours & Events (Thailand)
+NOTE:Business Operations Advisor (Project Basis)\\nIATA & Non-IATA OTA Specialist\\n\\nSupporting Regional & Global Travel Brands:\\n• #Bangladesh\\n• S.S Holidays (BD)\\n• #Malaysia\\n• #Thailand\\n• #UAE
 CATEGORIES:Aviation,Travel,Sales,Marketing
 END:VCARD`;
 
@@ -64,7 +62,7 @@ END:VCARD`;
 					<CardContent className="space-y-1 pb-3">
 						<div className="text-sm">
 							<span>Business Operations Advisor</span>
-							<span className="text-muted-foreground ml-1">(Part-Time)</span>
+							<span className="text-muted-foreground ml-1">(Project Basis)</span>
 						</div>
 						<div className="text-sm">
 							<span>IATA & Non-IATA OTA Specialist</span>
@@ -79,7 +77,7 @@ END:VCARD`;
 					</CardHeader>
 					<CardContent className="pb-3">
 						<div className="text-sm text-muted-foreground leading-relaxed">
-							{supportedBrands.join(" • ")}
+							{supportedBrands.join(" , ")}
 						</div>
 					</CardContent>
 				</Card>
@@ -125,16 +123,17 @@ END:VCARD`;
 							<div className="flex items-center justify-center w-8 h-8 bg-primary/10 rounded-full">
 								<Mail className="w-3 h-3 text-primary" />
 							</div>
-							<div className="flex-1 space-y-0.5">
+							<div className="flex-1 space-x-1">
 								<a
 									href="mailto:gmsaki009@gmail.com"
-									className="block text-primary hover:underline text-xs"
+									className=" text-primary hover:underline text-xs"
 								>
 									gmsaki009@gmail.com
 								</a>
+								<span>|</span>
 								<a
 									href="mailto:gmsaklayen@hotmail.com"
-									className="block text-primary hover:underline text-xs"
+									className=" text-primary hover:underline text-xs"
 								>
 									gmsaklayen@hotmail.com
 								</a>
